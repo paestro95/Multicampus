@@ -1,5 +1,7 @@
 package j211228.Conditional_Statement;
 
+import javax.lang.model.util.ElementScanner6;
+
 /*
 세 개의 직선이 있습니다.
 
@@ -11,18 +13,30 @@ package j211228.Conditional_Statement;
 */
 public class Ex_9 {
     public static void main(String[] args) {
-        int a = 2;
-        int b = 5;
+    
+        int a = 7;
+        int b = 11;
         int c = 6;
-
-        if (a > b + c) {
-            System.out.println("삼각형을 만들 수 있습니다.");
-        } else if (b > a + c) {
-            System.out.println("삼각형을 만들 수 있습니다.");
-        } else if (c > a + b) {
-            System.out.println("삼각형을 만들 수 있습니다.");
-        } else
-            System.out.println("삼각형을 만들 수 없습니다.");
-
+        
+        int max = c;
+        int other_sum = a + b;
+        
+        if(a > b) {
+          if(a > c) {
+            max = a;
+            other_sum = b+c;
+          } 
+        } else {
+          if(b > c) {
+            max = b;
+            other_sum = a+c;
+          } 
+        }
+    
+        if(max < other_sum) {
+          System.out.println("o");
+        } else {
+          System.out.println("x");
+        }
+      }
     }
-}
