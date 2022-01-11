@@ -13,7 +13,7 @@
 //     public double area;
 //     public int population;
 //     static String planetName = "Mars";
-   
+ 
 
 //     void setNationName(String nationName) {
 //         this.nationName = nationName;

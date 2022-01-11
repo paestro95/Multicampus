@@ -33,6 +33,7 @@ class Mouse extends Part {
     }
 }
 
+
 public class Computer {
     public static void main(String[] args) {
         CPU cpu = new CPU("인텔", 350000);
