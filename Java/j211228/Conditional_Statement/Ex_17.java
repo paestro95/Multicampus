@@ -29,6 +29,6 @@ public class Ex_17 {
                 System.out.println("판매하지 않는 음료입니다.");
 
         }
-
+        sc.close();
     }
 }

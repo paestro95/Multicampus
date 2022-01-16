@@ -1,7 +1,5 @@
 package j211228.Conditional_Statement;
 
-import javax.lang.model.util.ElementScanner6;
-
 /*
 세 개의 직선이 있습니다.
 

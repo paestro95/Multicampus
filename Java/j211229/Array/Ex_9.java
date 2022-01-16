@@ -1,7 +1,5 @@
 package j211229.Array;
 
-import java.net.Socket;
-
 public class Ex_9 {
     public static void main(String[] args) {
         
