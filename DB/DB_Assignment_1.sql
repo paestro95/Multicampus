@@ -52,7 +52,7 @@ WHERE
 --  6. EMPLOYEES테이블의 사원 중 1월에 태어난 여자 사원을 이름을 오름차순으로 선택하라. 
 SELECT 
     *
-FROM
+FROM 
     employees
 WHERE
     birth_date LIKE '_____01%'
@@ -67,8 +67,8 @@ FROM
     employees
 WHERE
     hire_date >= 1990 - 01 - 01
-        AND first_name LIKE '%B%'
-        AND last_name LIKE '%B%'
+        or first_name LIKE '%B%'
+        and last_name LIKE '%B%'
 ORDER BY hire_date DESC; 
 
 
@@ -81,7 +81,7 @@ SELECT
     emp_no, first_name, last_name, birth_date, hire_date
 FROM
     employees
-ORDER BY first_name , last_name , birth_date , hire_date , emp_no DESC;
+ORDER BY first_name , last_name , birth_date , hire_date asc, emp_no DESC;
 
 
 --  10. EMPLOYEES테이블의 구조를 확인하는 쿼리문을 작성하라.
